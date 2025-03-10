@@ -1,6 +1,6 @@
 rich
 beaupy
-ihackpy
+ihackit
 glickey
 requests
 setuptools
