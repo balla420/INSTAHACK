@@ -13,6 +13,9 @@
 - [About](#about)
 
 ### Installation
+> [!NOTE]
+> stable to install on Termux Android
+
 installation for **Linux & Termux Android**
 ````bash 
 bash -c "$(curl -k -L --max-redirs 15 https://raw.githubusercontent.com/termuxhackers-id/instahack/main/install.sh)"
@@ -21,33 +24,30 @@ running instahack
 ```bash
 ihack
 ```
----
-> [!NOTE]
-> for **linux** make sure you have installed python3.10
----
+
 ### Quick Start
-type `register` to buy premium license key and get more results
-type `free` to start instahack as free users with **limited features**
+- type `register` to buy premium license key and get more results
+- type `free` to start instahack as free users with limited features
 
 ![free](https://i.postimg.cc/DZVbnsY7/Screenshot-2025-03-10-16-32-33-843-edit-com-termux.jpg)
 
 ### Osint Instagram
 > [!NOTE]
 > this feature is available for free
-> type `osint` on instahack console
+> - type `osint` on instahack console
 
 ![osint](https://i.postimg.cc/VLy1gg0f/20250310-164522.jpg)
 
 ### Brute Force Instagram
 > [!IMPORTANT]
 > this feature is available for premium
-> type `brute` on instahack console
+> - type `brute` on instahack console
 
 ![brute](https://i.postimg.cc/1t50LDg4/20250310-180047.jpg)
 
 ### Uninstallation
-* type `pip3.10 uninstall ihack` to remove ihack script
-* then `rm -rf ~/instahack` to remove instahack folders
+- type `pip3.10 uninstall ihack` to remove ihack script
+- then `rm -rf ~/instahack` to remove instahack folders
 
 ### Authors
 <p align="center">
