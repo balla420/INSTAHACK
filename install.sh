@@ -37,7 +37,7 @@ termux() {
     echo
     echo -e "${W}[ ${B}INFO${W} ] ${G}INSTAHACK${W}: install ${Y}requirements.txt${W} with pip3.10 ..."
     echo
-    cd $folder
+    cd $folder || exit 1
     python3.10 -m pip install -r requirements.txt
     echo
     echo -e "${W}[ ${B}INFO${W} ] ${G}INSTAHACK${W}: install ${Y}ihack${W} with setuptools ..."
@@ -48,6 +48,7 @@ termux() {
     [ -d build ] && rm -rf build
     [ -d ihack.egg-info ] && rm -rf ihack.egg-info
     find . -name "*.jpg" -delete
+    find . -name "*.png" -delete
     find . -name "*.md" -delete
     echo
     if [ -f /data/data/com.termux/files/usr/bin/ihack ]; then
@@ -69,13 +70,13 @@ linux() {
     echo -e "${W}[ ${B}INFO${W} ] ${G}INSTAHACK${W}: adding package repository ${Y}ppa:savoury1/python${W} ..."
     echo
     sudo apt-get install software-properties-common -y
-    sudo add-apt-repository ppa:savoury1/python
-    sudo apt update
+    sudo add-apt-repository ppa:deadsnakes/ppa
+    sudo apt-get update
     echo
     echo -e "${W}[ ${B}INFO${W} ] ${G}INSTAHACK${W}: installing ${Y}git${W}, ${Y}python3.10${W} ..."
     echo
     sudo apt-get install git -y
-    sudo apt-get install python3.10 -y
+    sudo apt-get install python3.10 python3.10-venv python3.10-distutils -y
     echo
     echo -e "${W}[ ${B}INFO${W} ] ${G}INSTAHACK${W}: cloning github repository ..."
     echo
@@ -84,13 +85,13 @@ linux() {
     fi
     git clone --depth 1 https://github.com/termuxhackers-id/instahack
     echo
-    echo -e "${W}[ ${B}INFO${W} ] ${G}INSTAHACK${W}: upgrading ${Y}pip3.10${W} ..."
+    echo -e "${W}[ ${B}INFO${W} ] ${G}INSTAHACK${W}: install ${Y}pip3.10${W} ..."
     echo
-    python3.10 -m pip install --upgrade pip
+    curl -sS https://bootstrap.pypa.io/get-pip.py | sudo python3.10
     echo
     echo -e "${W}[ ${B}INFO${W} ] ${G}INSTAHACK${W}: install ${Y}requirements.txt${W} with pip3.10 ..."
     echo
-    cd $folder
+    cd $folder || exit 1
     python3.10 -m pip install -r requirements.txt
     echo
     echo -e "${W}[ ${B}INFO${W} ] ${G}INSTAHACK${W}: install ${Y}ihack${W} with setuptools ..."
@@ -101,6 +102,7 @@ linux() {
     [ -d build ] && rm -rf build
     [ -d ihack.egg-info ] && rm -rf ihack.egg-info
     find . -name "*.jpg" -delete
+    find . -name "*.png" -delete
     find . -name "*.md" -delete
     echo
     if command -v ihack &> /dev/null; then
