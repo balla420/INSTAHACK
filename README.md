@@ -23,19 +23,8 @@ ihack
 ```
 ---
 > [!NOTE]
-> for linux or windows-subsystem-linux (WSL)
-> make sure you have installed python3.10 and pip3.10
+> for **linux** make sure you have installed python3.10
 ---
-| Library        | Installation                  | 
-|----------------|-------------------------------|
-| Rich           | `pip install rich`            |
-| Beaupy         | `pip install beaupy`          |
-| Glickey        | `pip install glickey`         |
-| Ihackit        | `pip install ihackit`         |
-| Requests       | `pip install requests`        |
-| Setup Tools    | `pip install setuptools`      |
-| Prompt Toolkit | `pip install prompt_toolkit`  |
-
 ### Quick Start
 type `register` to buy premium license key and get more results
 type `free` to start instahack as free users with **limited features**
