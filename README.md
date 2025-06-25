@@ -9,7 +9,6 @@
 - [Osint Instagram](#osint-instagram)
 - [Brute Force Instagram](#brute-force-instagram)
 - [Uninstallation](#uninstallation)
-- [Authors](#authors)
 - [About](#about)
 
 ### Installation
@@ -31,6 +30,15 @@ ihack
 
 ![free](https://i.postimg.cc/DZVbnsY7/Screenshot-2025-03-10-16-32-33-843-edit-com-termux.jpg)
 
+Login with **instagram cookies**
+- You have to install [Kiwi Browser](https://www.apkmirror.com/apk/geometry-ou/kiwi-browser-fast-quiet/kiwi-browser-fast-quiet-137-0-7337-0-release/kiwi-browser-fast-quiet-137-0-7337-0-3-android-apk-download/download/?key=63844fd36f9106b30a83386c36594be2f077a0a0)
+- Then install **CookieMaster** extension from Chrome Store
+- Login to instagram with your accounts
+- Run the extension on the same page
+- Copy all cookies:
+  - `mid=abcde; ds_user_id=12345; sessionid=abcde; ig_did=a23d5; etc...`
+- Paste on instahack login
+
 ### Osint Instagram
 > [!NOTE]
 > this feature is available for free
@@ -48,21 +56,6 @@ ihack
 ### Uninstallation
 - type `pip3.10 uninstall ihack` to remove ihack script
 - then `rm -rf ~/instahack` to remove instahack folders
-
-### Authors
-<p align="center">
-  <img src="https://2.gravatar.com/avatar/883c7ebdf4f802eeeaafad5c229372afdb625e67de197c88272fa2fcf12256fb?size=512" width="150" style="border-radius: 50%;">
-  <br>
-  <b>Iqbalmh18</b>
-  <br>
-  <a href="https://github.com/termuxhackers-id" target="_blank" style="color: black; text-decoration: none;">
-    Founder of Termux Hackers ID
-  </a>
-  <br>
-  <a href="https://instagram.com/iqbalmh18" target="_blank" style="color: black; text-decoration: none;">
-    Follow on Instagram
-  </a>
-</p>
 
 ### About
 **Developed Since February 1, 2023**
